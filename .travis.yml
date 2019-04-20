@@ -1,0 +1,10 @@
+sudo: false
+language: node_js
+node_js:
+  - '8'
+deploy:
+  provider: npm
+  email: "zhouzhi073859@outlook.com"
+  api_key: "20e3a46d-644d-46bc-af2b-8ff423b24f8b"
+  on:
+    branch: master

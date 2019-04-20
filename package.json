@@ -1,0 +1,41 @@
+{
+  "name": "wasm-module-webpack-plugin",
+  "description": "Webpack loader that transforms wasm and glue js source files into javascript bundles.",
+  "author": "zhi.zhou",
+  "license": "MIT",
+  "version": "0.0.1",
+  "keywords": [
+    "wasm",
+    "webpack",
+    "plugin",
+    "webassembly",
+    "babel"
+  ],
+  "homepage": "https://github.com/zhouzhi3859/wasm-module-webpack-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhouzhi3859/wasm-module-webpack-plugin.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./example/webpack.config.js --inline --progress --hot",
+    "test": "echo 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "engines": {
+    "node": ">= 8.0"
+  }
+}
