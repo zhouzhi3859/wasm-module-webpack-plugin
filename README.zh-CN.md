@@ -1,5 +1,5 @@
 # WASM Module Webpack Loader
-![](https://img.shields.io/badge/version-0.0.3-green.svg?)
+![](https://img.shields.io/badge/version-0.0.4-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
@@ -11,7 +11,8 @@
 轻量级 加载含wasm文件的npm模块 的webpack插件 
 
 ## 安装
-1 运行 `npm i wasm-module-webpack-plugin --save-dev`.
+1 运行 `npm i wasm-module-webpack-plugin --save-dev`
+
 2 引入 `wasm-module-webpack-plugin` 模块
 ```js
 const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
