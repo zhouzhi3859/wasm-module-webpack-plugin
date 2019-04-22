@@ -1,5 +1,5 @@
 # WASM Module Webpack Loader
-![](https://img.shields.io/badge/version-0.0.3-green.svg?)
+![](https://img.shields.io/badge/version-0.0.4-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
@@ -14,6 +14,7 @@ Load module which have wasm file into javascript with a zero bloat. \
 
 ## Installation
 1 Run `npm i wasm-module-webpack-plugin --save-dev`.
+
 2 Require method from wasm-module-webpack-plugin
 ```js
 const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
