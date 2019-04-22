@@ -8,18 +8,16 @@
 
 [![NPM](https://nodei.co/npm/wasm-module-webpack-plugin.png)](https://nodei.co/npm/wasm-module-webpack-plugin/)
 
-[中文文档](https://github.com/zhouzhi3859/wasm-module-webpack-plugin/blob/master/README.zh-CN.md)
+轻量级 加载含wasm文件的npm模块 的webpack插件 
 
-Load module which have wasm file into javascript with a zero bloat. \
-
-## Installation
-1 Run `npm i wasm-module-webpack-plugin --save-dev`.
-2 Require method from wasm-module-webpack-plugin
+## 安装
+1 运行 `npm i wasm-module-webpack-plugin --save-dev`.
+2 引入 `wasm-module-webpack-plugin` 模块
 ```js
 const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
 ```
 
-3 Add this object to the `rules` section of your webpack build:
+3 修改 `rules` 相关配置为如下所示
 ```js
 {
   test: /\.m?js$/,
@@ -33,14 +31,14 @@ const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
   }
 }
 ```
-4 Add this object to the `plugins` section of your webpack build:
+4 在 `plugins` 下添加以下配置
 ```js
 plugins: [
   new WasmModuleWebpackPlugin.WebpackPlugin()
 ]
 ```
-## Example
-You can also view a complete working example on github [here](https://github.com/zhouzhi3859/wasm-module-webpack-plugin/tree/master/example).
+## 示例
+参考[点击这里](https://github.com/zhouzhi3859/wasm-module-webpack-plugin/tree/master/example).
 
 
 ## MIT License

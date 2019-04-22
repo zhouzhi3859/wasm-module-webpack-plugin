@@ -1,5 +1,2 @@
-import gps from './gps/main';
+import gps from './gps/main.js';
 console.log(gps);
-// wasm().then(mod => {
-//   console.log('mod', mod);
-// });
