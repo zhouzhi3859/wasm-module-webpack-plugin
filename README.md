@@ -10,7 +10,7 @@
 
 [中文文档](https://github.com/zhouzhi3859/wasm-module-webpack-plugin/blob/master/README.zh-CN.md)
 
-Load module which have wasm file into javascript with a zero bloat. \
+Load module which have wasm file into javascript with a zero bloat.
 
 ## Installation
 1 Run `npm i wasm-module-webpack-plugin --save-dev`.
