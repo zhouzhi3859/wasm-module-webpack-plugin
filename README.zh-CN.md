@@ -1,5 +1,5 @@
 # WASM Module Webpack Loader
-![](https://img.shields.io/badge/version-1.0.0-green.svg?)
+![](https://img.shields.io/badge/version-1.0.1-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
@@ -23,6 +23,7 @@ const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
 {
   test: /\.m?js$/,
   exclude: /(node_modules|bower_components)/,
+  include: '{wasm 模块路径}', // 例如. node_modules/{wasm模块名}
   use: {
     loader: 'babel-loader',
     options: {
