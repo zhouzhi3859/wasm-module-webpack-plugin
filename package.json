@@ -3,7 +3,7 @@
   "description": "Webpack loader that transforms wasm and glue js source files into javascript bundles.",
   "author": "zhi.zhou",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "wasm",
     "webpack",
