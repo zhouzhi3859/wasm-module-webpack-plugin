@@ -1,8 +1,10 @@
 # WASM Module Webpack Loader
-![](https://img.shields.io/badge/version-1.0.2-green.svg?)
+![](https://img.shields.io/badge/version-1.0.4-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
+[![](https://img.shields.io/badge/webpack->=4.0-blue.svg)](https://webpack.js.org/)
+[![](https://img.shields.io/badge/babel->=7.0-blue.svg)](https://babeljs.io/)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
 [![Build Status](https://www.travis-ci.org/zhouzhi3859/wasm-module-webpack-plugin.svg?branch=master)](https://www.travis-ci.org/zhouzhi3859/wasm-from-emscripten-result-loader)
 
