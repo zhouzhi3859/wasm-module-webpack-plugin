@@ -1,4 +1,4 @@
-# WASM Module Webpack Loader
+# WASM Module Webpack Plugin
 ![](https://img.shields.io/badge/version-1.0.5-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
