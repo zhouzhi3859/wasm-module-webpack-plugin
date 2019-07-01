@@ -1,10 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WasmPlugin = require('../lib/webpack-plugin');
-const BabelPlugin = require('../lib/babel-plugin');
+const { WebpackPlugin, BabelPlugin } = require('../index');
 
 module.exports = {
-  // mode: 'production',
   entry: {
         main: [path.join(__dirname, './main.js')]
     },
@@ -22,12 +20,9 @@ module.exports = {
           {
             test: /\.m?js$/,
             exclude: /(node_modules|bower_components)/,
+            include: [ path.join(__dirname, './gps') ],
             use: {
               loader: 'babel-loader',
-              // options: {
-              //   presets: ['@babel/preset-env'],
-              //   plugins: [  '@babel/plugin-syntax-dynamic-import', path.join(__dirname, '../lib/fetch-wasm'), '@babel/plugin-transform-runtime' ]
-              // }
               options: {
                 presets: ['@babel/preset-env'],
                 plugins: [ '@babel/plugin-syntax-dynamic-import', BabelPlugin ]
@@ -41,6 +36,6 @@ module.exports = {
       chunksSortMode: 'dependency',
       template: path.resolve('./example', './index.html'),
     }),
-    new WasmPlugin()
+    new WebpackPlugin()
   ],
 };
