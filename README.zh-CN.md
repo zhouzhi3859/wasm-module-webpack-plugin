@@ -1,5 +1,5 @@
 # WASM Module Webpack Plugin
-![](https://img.shields.io/badge/version-1.1.3-green.svg?)
+![](https://img.shields.io/badge/version-1.1.4-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
@@ -7,6 +7,7 @@
 [![](https://img.shields.io/badge/babel->=7.0-blue.svg)](https://babeljs.io/)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
 [![Build Status](https://www.travis-ci.org/zhouzhi3859/wasm-module-webpack-plugin.svg?branch=master)](https://www.travis-ci.org/zhouzhi3859/wasm-from-emscripten-result-loader)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8ec7e8848e91492aa96c885b72090314)](https://www.codacy.com/manual/zhouzhi3859/wasm-module-webpack-plugin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zhouzhi3859/wasm-module-webpack-plugin&amp;utm_campaign=Badge_Grade)
 
 [![NPM](https://nodei.co/npm/wasm-module-webpack-plugin.png)](https://nodei.co/npm/wasm-module-webpack-plugin/)
 
