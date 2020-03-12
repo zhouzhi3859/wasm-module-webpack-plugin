@@ -1,0 +1,12 @@
+{
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": "eslint-config-egg",
+  "rules":{
+    "linebreak-style": "off",
+    "no-unused-vars": 0,
+    "strict": 0,
+    "no-extend-native": 0
+  }
+}
