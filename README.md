@@ -1,5 +1,5 @@
 # WASM Module Webpack Plugin
-![](https://img.shields.io/badge/version-2.0.0-green.svg?)
+![](https://img.shields.io/badge/version-2.0.1-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
 [![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
@@ -27,17 +27,24 @@ const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
 ```js
 {
   test: /\.m?js$/,
-  exclude: /(node_modules|bower_components)/,
-  include: [ path.join(process.cwd(), './node_modules/{wasm_module_name}') ],
+  // exclude: /(node_modules|bower_components)/, // Do not set {exclude}
+  include: [ '{your_code_dir}', path.join(process.cwd(), './node_modules/{wasm_module_name}') ],
   use: {
     loader: 'babel-loader',
     options: {
       presets: ['@babel/preset-env'],
-      plugins: [ '@babel/plugin-syntax-dynamic-import', WasmModuleWebpackPlugin.BabelPlugin ]
+      plugins: [
+      '@babel/plugin-syntax-dynamic-import',
+      // '@babel/plugin-transform-runtime', // Do not use plugin-transform-runtime
+       WasmModuleWebpackPlugin.BabelPlugin
+     ]
     }
   }
 }
 ```
+NOTE: Do not use it with [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime)
+
+
 4 Add this object to the `plugins` section of your webpack build:
 ```js
 plugins: [
