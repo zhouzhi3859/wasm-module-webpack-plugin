@@ -26,16 +26,23 @@ const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
 {
   test: /\.m?js$/,
   exclude: /(node_modules|bower_components)/,
-  include: [ path.join(process.cwd(), './node_modules/{wasm模块名}') ],
+  include: [ '{你的代码文件夹}', path.join(process.cwd(), './node_modules/{wasm模块名}') ],
   use: {
     loader: 'babel-loader',
     options: {
       presets: ['@babel/preset-env'],
-      plugins: [ '@babel/plugin-syntax-dynamic-import', WasmModuleWebpackPlugin.BabelPlugin ]
+      plugins: [
+        '@babel/plugin-syntax-dynamic-import',
+        // '@babel/plugin-transform-runtime', // 不要和这个插件一起使用
+         WasmModuleWebpackPlugin.BabelPlugin
+       ]
     }
   }
 }
 ```
+NOTE: 不要和 [@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime) 这个插件一起使用
+
+
 4 在 `plugins` 下添加以下配置
 ```js
 plugins: [

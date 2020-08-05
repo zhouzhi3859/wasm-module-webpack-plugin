@@ -4,7 +4,7 @@ const { WebpackPlugin, BabelPlugin } = require('../index');
 
 module.exports = {
   entry: {
-    main: [ path.join(__dirname, './main.js') ],
+    main: [ '@babel/polyfill', path.join(__dirname, './main.js') ],
   },
   output: {
     path: path.join(__dirname, './build'),
@@ -20,20 +20,34 @@ module.exports = {
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
-        include: [ path.join(__dirname, './gps') ],
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [ '@babel/preset-env' ],
-            plugins: [ '@babel/plugin-syntax-dynamic-import', BabelPlugin ],
+        include: [ __dirname, path.join(process.cwd(), './node_modules/@ne_fe/gis') ],
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              // cacheDirectory: true,
+              presets: [
+                [
+                  '@babel/preset-react',
+                  {
+                    development: process.env.NODE_ENV === 'development',
+                  },
+                ],
+                '@babel/preset-env',
+              ],
+              plugins: [
+                BabelPlugin,
+                // '@babel/plugin-transform-runtime',
+                '@babel/plugin-syntax-dynamic-import',
+              ],
+            },
           },
-        },
+        ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      chunksSortMode: 'dependency',
       template: path.resolve('./example', './index.html'),
     }),
     new WebpackPlugin(),
