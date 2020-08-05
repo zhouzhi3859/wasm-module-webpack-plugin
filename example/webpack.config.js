@@ -19,7 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
+        // exclude: /(node_modules|bower_components)/,
         include: [ __dirname, path.join(process.cwd(), './node_modules/@ne_fe/gis') ],
         use: [
           {

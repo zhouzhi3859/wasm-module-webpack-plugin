@@ -27,7 +27,7 @@ const WasmModuleWebpackPlugin = require('wasm-module-webpack-plugin');
 ```js
 {
   test: /\.m?js$/,
-  exclude: /(node_modules|bower_components)/,
+  // exclude: /(node_modules|bower_components)/, // Do not set {exclude}
   include: [ '{your_code_dir}', path.join(process.cwd(), './node_modules/{wasm_module_name}') ],
   use: {
     loader: 'babel-loader',
