@@ -12,6 +12,7 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },
+  mode: 'development',
   resolve: {
     extensions: [ '.js' ],
   },
