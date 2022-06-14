@@ -27,7 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         registry-url: 'https://registry.npmjs.org'
         cache: 'npm'
-    - run: npm login
     - run: npm ci
     - run: npm publish --access public
       env:
