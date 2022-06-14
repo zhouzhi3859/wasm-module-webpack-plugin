@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import neGis from '@ne_fe/gis';
 const gps = [];
 let lngX = 116.3;
@@ -17,6 +17,5 @@ for (let i = 1; i < 40; i++) {
 neGis.translateFromGPS(gps, 't').then(res => {
   console.log(res);
 });
-ReactDOM.render(
-  <div>1</div>, document.getElementById('app'));
-
+const root = createRoot(document.getElementById('app'));
+root.render(<div>1</div>);

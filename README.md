@@ -1,9 +1,9 @@
 # WASM Module Webpack Plugin
-![](https://img.shields.io/badge/version-2.0.1-green.svg?)
+![](https://img.shields.io/badge/version-3.0.0-green.svg?)
 ![npm](https://img.shields.io/npm/dw/wasm-module-webpack-plugin.svg)
-[![](https://img.shields.io/badge/nodejs->=8.0-green.svg?)](https://nodejs.org/en/)
+[![](https://img.shields.io/badge/nodejs->=12.0-green.svg?)](https://nodejs.org/en/)
 [![](https://img.shields.io/badge/npm->=5.4-blue.svg)](https://www.npmjs.com/)
-[![](https://img.shields.io/badge/webpack->=4.0-blue.svg)](https://webpack.js.org/)
+[![](https://img.shields.io/badge/webpack->=5.0-blue.svg)](https://webpack.js.org/)
 [![](https://img.shields.io/badge/babel->=7.0-blue.svg)](https://babeljs.io/)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
 [![Build Status](https://www.travis-ci.org/zhouzhi3859/wasm-module-webpack-plugin.svg?branch=master)](https://www.travis-ci.org/zhouzhi3859/wasm-from-emscripten-result-loader)
@@ -16,7 +16,7 @@
 Load module which have wasm file into javascript with a zero bloat.
 
 ## Installation
-1 Run `npm i wasm-module-webpack-plugin --save-dev`.
+1 Run `npm i wasm-module-webpack-plugin --save-dev`. If you want use with webpack4, switch to old version 2.0.1
 
 2 Require method from wasm-module-webpack-plugin
 ```js
